@@ -4,34 +4,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>QuickNews</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <h1>My News App</h1>
-        <form>
-            <input type="search" placeholder="Search latest news">
-            <button><img src="./assets/search-icon.png" alt=""></button>
-        </form>
-        <ul>
-            <li>Sports <span><img src="./assets/pngwing.com.png" alt=""></span></li>
-            <li>National <span><img src="./assets/pngwing.com.png" alt=""></span></li>
-            <li>International <span><img src="./assets/pngwing.com.png" alt=""></span></li>
-        </ul>
+        <h1>QuickNews</h1>
+        <div class="header-content">
+            <form id="searchBar">
+                <input type="search" placeholder="Search latest news" id="searchQuery">
+                <button><img src="./assets/search-icon.png" alt=""></button>
+            </form>
+            <ul>
+
+                <li><select name="lang" id="languages"></select></li>
+                <li><select name="country" id="country"></select></li>
+            </ul>
+        </div>
     </header>
     <main>
         <section class="news-section">
-            <div class="heading">
+            <ul>
+                <li>
+                    <label for="sports">
+                        <input type="radio" name="category" id="sports" value="sports">
+                        Sports News
+                    </label>
+                </li>
+                <li>
+                    <label for="buisness">
+                        <input type="radio" name="category" id="buisness" value="buisness">
+                        Business News
+                    </label>
+                </li>
+                <li>
+                    <label for="entertainment">
+                        <input type="radio" name="category" id="entertainment" value="entertainment">
+                        Entertainment News
+                    </label>
+                </li>
+                <li>
+                    <label for="health">
+                        <input type="radio" name="category" id="health" value="health">
+                        Health News
+                    </label>
+                </li>
+                <li>
+                    <label for="science">
+                        <input type="radio" name="category" id="science" value="science">
+                        Science News
+                    </label>
+                </li>
+                <li>
+                    <label for="technology">
+                        <input type="radio" name="category" id="technology" value="technology">
+                        Technology News
+                    </label>
+                </li>
+            </ul>
+            <!-- <div class="heading">
                 <h1>Latest News</h1>
-            </div>
+            </div> -->
             <div id="news-card-container">
-                
+
             </div>
         </section>
     </main>
-    <script src="app.js"></script>
+    <script src="app.js" type="module"></script>
 </body>
 
 </html>
