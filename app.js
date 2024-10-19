@@ -350,9 +350,8 @@ let showNews = (articles) => {
  } );
 }
 
-let targetUrl = "https://newsapi.org/v2/everything?q=tesla&from=2024-09-19&sortBy=publishedAt&apiKey=dfe6b505e6ab4615b0617af82ce29a64";
-const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
-fetch(proxyUrl + targetUrl)
+
+fetch(`https://api.mediastack.com/v1/news?access_key=dfe6b505e6ab4615b0617af82ce29a64`)
     .then((res) => res.json())
     .then((data) => {
         console.log(data);
