@@ -156,6 +156,8 @@ main{
     header{
         flex-direction: column;
         align-items: flex-start;
+        height: 120px;
+        padding-top: 10px;
     }
     .news-section ul{
         font-size: 18px;
@@ -175,10 +177,6 @@ main{
     }
 }
 @media (max-width:480px) {
-    header{
-        height: 120px;
-        padding-top: 10px;
-    }
     header ul{
         flex-direction: column;
         position: relative;
