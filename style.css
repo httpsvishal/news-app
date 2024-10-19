@@ -175,6 +175,10 @@ main{
     }
 }
 @media (max-width:480px) {
+    header{
+        height: 120px;
+        padding-top: 10px;
+    }
     header ul{
         flex-direction: column;
         position: relative;
