@@ -350,8 +350,9 @@ let showNews = (articles) => {
  } );
 }
 
-
-fetch(`https://newsapi.org/v2/everything?q=tesla&from=2024-09-19&sortBy=publishedAt&apiKey=dfe6b505e6ab4615b0617af82ce29a64`)
+let targetUrl = "https://newsapi.org/v2/everything?q=tesla&from=2024-09-19&sortBy=publishedAt&apiKey=dfe6b505e6ab4615b0617af82ce29a64";
+const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
+fetch(proxyUrl + targetUrl)
     .then((res) => res.json())
     .then((data) => {
         console.log(data);
