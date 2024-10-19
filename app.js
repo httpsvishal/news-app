@@ -351,7 +351,7 @@ let showNews = (articles) => {
 }
 
 
-fetch(`https://api.mediastack.com/v1/news?access_key=dfe6b505e6ab4615b0617af82ce29a64`)
+fetch(`https://api.mediastack.com/v1/news?access_key=${API_KEY}`)
     .then((res) => res.json())
     .then((data) => {
         console.log(data);
