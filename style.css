@@ -66,9 +66,11 @@ form{
     border-radius: 25px;
     font-size: 22px;
     
+    
     input{
         border: none;
         flex-grow: 1;
+        outline: none;
     }
     button{
         border: none;
